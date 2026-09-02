@@ -1,0 +1,17 @@
+name: SkyVillagerRain
+version: '${version}'
+main: com.skyvillagerrain.SkyVillagerRain.SkyVillagerRainPlugin
+api-version: '1.21'
+author: SkyVillagerRain
+commands:
+  villagerrain:
+    description: Manage Villager Rain events.
+    usage: /villagerrain [start|stop|reload|status]
+    aliases: [vrain]
+permissions:
+  skyvillagerrain.admin:
+    description: Allows administration of SkyVillagerRain, including manually starting/stopping events and reloading configuration.
+    default: op
+  skyvillagerrain.use:
+    description: Allows the player to be considered eligible for Villager Rain events.
+    default: true

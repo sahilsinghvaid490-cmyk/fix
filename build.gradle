@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.skyvillagerrain'
+version = '1.0.0'
+
+def paperVersion = '1.21.8-R0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url = uri('https://repo.papermc.io/repository/maven-public/') }
+}
+
+dependencies {
+    compileOnly("io.papermc.paper:paper-api:${paperVersion}")
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
+}
+
+processResources {
+    filesMatching('plugin.yml') { expand(version: project.version) }
+}
+
+jar {
+    archiveBaseName = 'SkyVillagerRain'
+}

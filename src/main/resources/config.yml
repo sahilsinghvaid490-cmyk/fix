@@ -1,0 +1,37 @@
+event:
+  interval-seconds: 120
+  duration-seconds: 25
+  spawn-interval-ticks: 20
+  villagers-per-player: 1
+
+spawn:
+  height-above-player: 30
+  horizontal-radius: 5
+  max-location-attempts: 5
+
+players:
+  include-players-who-join-during-event: true
+  require-use-permission: true
+  skip-spectators: true
+  skip-dead-players: true
+
+villager:
+  profession: NONE
+  invulnerable: false
+  silent: false
+  baby: false
+  remove-after-event: false
+
+messages:
+  event-start: "&e☄ Villager Rain has started!"
+  event-end: "&aVillager Rain has ended!"
+  plugin-enabled: "&aSkyVillagerRain enabled."
+  plugin-disabled: "&cSkyVillagerRain disabled."
+  no-permission: "&cYou do not have permission to use this command."
+  player-only: "&cThis command can only be used by a player."
+  invalid-argument: "&cInvalid argument."
+  reload-success: "&aSkyVillagerRain configuration reloaded."
+  event-forced: "&eVillager Rain event started manually."
+  event-already-active: "&cA Villager Rain event is already active."
+  event-not-active: "&cNo Villager Rain event is currently active."
+  event-stopped: "&cVillager Rain event stopped."
